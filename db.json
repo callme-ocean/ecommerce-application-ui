@@ -1,0 +1,40 @@
+{
+  "seller": [
+    {
+      "name": "Sammy",
+      "password": "4546842654",
+      "email": "1546443516",
+      "id": 1
+    },
+    {
+      "name": "Sagar",
+      "password": "4546842654",
+      "email": "sagarsingh0802@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Micky",
+      "password": "12345",
+      "email": "mickey@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Micky",
+      "password": "12345",
+      "email": "mickey@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "Bui",
+      "password": "123456789",
+      "email": "bui@yahoo.in",
+      "id": 5
+    },
+    {
+      "name": "Vijay Chandel",
+      "password": "123456",
+      "email": "v@gmail.com",
+      "id": 6
+    }
+  ]
+}

@@ -10,6 +10,7 @@ import { SingUp } from '../data-type';
 })
 export class SellerAuthComponent {
   showLogin: boolean = false;
+  authError: string = "";
 
   constructor(private seller: SellerService, private router: Router) {
 
@@ -24,7 +25,15 @@ export class SellerAuthComponent {
   }
 
   login(data: SingUp): void {
-    console.warn(data);
+    this.authError = "";
+
+    this.seller.userLogin(data);
+    this.seller.isLoginError.subscribe((isError) => {
+
+      if (isError) {
+        this.authError = "Email or password is not correct";
+      }
+    });
   }
 
   openLogin() {

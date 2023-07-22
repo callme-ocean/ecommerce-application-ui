@@ -9,18 +9,29 @@ import { SingUp } from '../data-type';
   styleUrls: ['./seller-auth.component.css']
 })
 export class SellerAuthComponent {
+  showLogin: boolean = false;
 
   constructor(private seller: SellerService, private router: Router) {
 
   }
 
+  ngOnInit(): void {
+    this.seller.reloadSeller();
+  }
+
   singUp(data: SingUp): void {
+    this.seller.userSignUp(data);
+  }
+
+  login(data: SingUp): void {
     console.warn(data);
-    this.seller.userSignUp(data).subscribe((result) => {
-      if (result) {
-        this.router.navigate(['seller-home']);
-      }
-      console.warn(result);
-    });
+  }
+
+  openLogin() {
+    this.showLogin = true;
+  }
+
+  openSignUp() {
+    this.showLogin = false;
   }
 }

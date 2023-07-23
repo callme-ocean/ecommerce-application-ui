@@ -61,33 +61,6 @@
       "description": "SmartPhone",
       "image": "https://i.gadgets360cdn.com/products/large/Pixel-7-Pro-643x800-1665067249.jpg?downsize=*:360",
       "id": 2
-    },
-    {
-      "name": "Iphone 14",
-      "price": "100000",
-      "color": "White",
-      "category": "Mobile",
-      "description": "SmartPhone",
-      "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-finish-select-202209-6-7inch-starlight?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1661027935971",
-      "id": 3
-    },
-    {
-      "name": "Iphone 14 pro",
-      "price": "100000",
-      "color": "Black",
-      "category": "Mobile",
-      "description": "SmartPhone",
-      "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-finish-select-202209-6-7inch-starlight?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1661027935971",
-      "id": 4
-    },
-    {
-      "name": "oneplus 5t",
-      "price": "25000",
-      "color": "Black",
-      "category": "Mobile",
-      "description": "smartphone",
-      "image": "https://i.gadgets360cdn.com/products/large/Pixel-7-Pro-643x800-1665067249.jpg?downsize=*:360",
-      "id": 5
     }
   ]
 }

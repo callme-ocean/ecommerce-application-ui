@@ -52,15 +52,6 @@
       "name": "Pixel 7",
       "price": "75000",
       "id": 1
-    },
-    {
-      "name": "Pixel 7 Pro",
-      "price": "90000",
-      "color": "Black",
-      "category": "Mobile",
-      "description": "SmartPhone",
-      "image": "https://i.gadgets360cdn.com/products/large/Pixel-7-Pro-643x800-1665067249.jpg?downsize=*:360",
-      "id": 2
     }
   ]
 }

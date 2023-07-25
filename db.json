@@ -61,6 +61,33 @@
       "description": "sfwse",
       "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-finish-select-202209-6-7inch-starlight?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1661027935971",
       "id": 2
+    },
+    {
+      "name": "Pixel 7 Pro",
+      "price": "75000",
+      "color": "Black",
+      "category": "Mobile",
+      "description": "smartphone",
+      "image": "https://i.gadgets360cdn.com/products/large/Pixel-7-Pro-643x800-1665067249.jpg?downsize=*:360",
+      "id": 3
+    },
+    {
+      "name": "nike shoes",
+      "price": "12000",
+      "color": "orange",
+      "category": "Shoes",
+      "description": "sport shoes",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9iKcyfFORv3SnoB5MNA-J53EuMiGyW__xuA&usqp=CAU",
+      "id": 4
+    },
+    {
+      "name": "playstation 5",
+      "price": "55000",
+      "color": "White",
+      "category": "Gaming Console",
+      "description": "gaming",
+      "image": "https://cdn1.smartprix.com/rx-iONR62zZ0-w420-h420/sony-playstation-5-p.jpg",
+      "id": 5
     }
   ]
 }

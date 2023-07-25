@@ -1,0 +1,5 @@
+.product-header-img {
+  object-fit: contain;
+  height: 600px;
+  width: 100%;
+}

@@ -29,4 +29,8 @@ export class ProductService {
   updateProduct(data: Product) {
     return this.http.put<Product>(`http://localhost:3000/products/${data.id}`, data);
   }
+
+  popularProducts() {
+    return this.http.get<Product[]>('http://localhost:3000/products?_limit=4');
+  }
 }

@@ -88,6 +88,15 @@
       "description": "gaming",
       "image": "https://cdn1.smartprix.com/rx-iONR62zZ0-w420-h420/sony-playstation-5-p.jpg",
       "id": 5
+    },
+    {
+      "name": "Iphone 11",
+      "price": "25000",
+      "color": "Black",
+      "category": "Mobile",
+      "description": "dsgsgsdf",
+      "image": "https://cdn1.smartprix.com/rx-iONR62zZ0-w420-h420/sony-playstation-5-p.jpg",
+      "id": 6
     }
   ]
 }

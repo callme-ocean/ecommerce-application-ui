@@ -9,6 +9,7 @@ import { Product } from '../data-type';
 })
 export class HomeComponent {
   popularProducts: undefined | Product[];
+  trendyProducts: undefined | Product[];
 
   constructor(private product: ProductService) {
 
@@ -18,6 +19,10 @@ export class HomeComponent {
     this.product.popularProducts().subscribe((result) => {
       console.warn(result);
       this.popularProducts = result;
+    });
+
+    this.product.trendyProducts().subscribe((result) => {
+      this.trendyProducts = result;
     });
   }
 }

@@ -98,5 +98,19 @@
       "image": "https://cdn1.smartprix.com/rx-iONR62zZ0-w420-h420/sony-playstation-5-p.jpg",
       "id": 6
     }
+  ],
+  "users": [
+    {
+      "name": "Sagar",
+      "email": "sagarsingh0802@gmail.com",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "name": "Mickey",
+      "email": "mickey@gmail.com",
+      "password": "abcd@1234",
+      "id": 2
+    }
   ]
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SingUp } from '../data-type';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-user-auth',
@@ -7,13 +8,13 @@ import { SingUp } from '../data-type';
   styleUrls: ['./user-auth.component.css']
 })
 export class UserAuthComponent {
-  constructor() { }
+  constructor(private user: UserService) { }
 
   ngOnInit() {
 
   }
 
   signUp(data: SingUp) {
-    console.warn(data);
+    this.user.userSignUp(data);
   }
 }

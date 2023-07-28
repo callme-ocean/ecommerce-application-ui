@@ -111,6 +111,18 @@
       "email": "mickey@gmail.com",
       "password": "abcd@1234",
       "id": 2
+    },
+    {
+      "name": "Bui",
+      "email": "dgdffgsd",
+      "password": "adsgasdg",
+      "id": 3
+    },
+    {
+      "name": "Juhi",
+      "email": "juhi@test.com",
+      "password": "abcd@1234",
+      "id": 4
     }
   ]
 }

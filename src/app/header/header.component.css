@@ -1,6 +1,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .nav h1 {
@@ -9,21 +10,22 @@
   font-size: 40px;
 }
 
-.nav ul {
+.nav ul li {
   display: inline-flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.nav li {
+.nav ul li {
   padding-left: 15px;
   padding-top: 15px;
 }
 
-.nav li a {
+.nav ul a {
   text-decoration: none;
   color: blueviolet;
+  cursor: pointer;
 }
 
 .nav .nav-search {

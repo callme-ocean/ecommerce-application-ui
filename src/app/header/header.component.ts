@@ -62,4 +62,8 @@ export class HeaderComponent {
     this.router.navigate([`search/${query}`]);
   }
 
+  redirectToDetails(id: number) {
+    this.router.navigate([`details/${id}`]);
+  }
 }
+

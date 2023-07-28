@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { SingUp } from '../data-type';
+import { Login, SingUp } from '../data-type';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
@@ -18,6 +18,15 @@ export class UserService {
         this.router.navigate(['/']);
       }
 
+    });
+  }
+
+  userLogin(user: Login) {
+    this.http.get<SingUp[]>(`http://localhost:3000/users?email=${user.email}&password=${user.password}`, { observe: 'response' }).subscribe((result) => {
+      if (result && result.body) {
+        localStorage.setItem('user', JSON.stringify(result.body[0]));
+        this.router.navigate(['/']);
+      }
     });
   }
 

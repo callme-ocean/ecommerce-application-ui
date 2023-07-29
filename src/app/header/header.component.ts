@@ -13,6 +13,7 @@ export class HeaderComponent {
   sellerName: string = "";
   searchResult: undefined | Product[];
   userName: string = "";
+  cartItems: number = 0;
 
   constructor(private router: Router, private product: ProductService) {
 
@@ -35,6 +36,15 @@ export class HeaderComponent {
           this.menuType = "default";
         }
       }
+    });
+
+    let cartData = localStorage.getItem('localCart');
+    if (cartData) {
+      this.cartItems = JSON.parse(cartData).length;
+    }
+
+    this.product.cartData.subscribe((items) => {
+      this.cartItems = items.length;
     });
   }
 

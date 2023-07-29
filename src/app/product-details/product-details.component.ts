@@ -23,10 +23,23 @@ export class ProductDetailsComponent {
   }
 
   handleQuantity(quantity: string) {
-    if (this.productQuantity<20 && quantity === "plus") {
+    if (this.productQuantity < 20 && quantity === "plus") {
       this.productQuantity += 1;
-    }else if (this.productQuantity>1 && quantity === "min") {
+    } else if (this.productQuantity > 1 && quantity === "min") {
       this.productQuantity -= 1;
+    }
+  }
+
+  addToCart() {
+    if (this.productData) {
+      this.productData.quantity = this.productQuantity;
+      if (!localStorage.getItem('user')) {
+        console.warn("user not logged in");
+        this.product.localAddToCart(this.productData);
+      } 
+      // else {
+      //   console.warn("user logged in");
+      // }
     }
   }
 }

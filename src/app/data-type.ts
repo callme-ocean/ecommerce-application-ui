@@ -19,3 +19,16 @@ export interface Product {
     price: string;
     quantity: undefined | number;
 }
+
+export interface Cart {
+    id: undefined | number;
+    category: string;
+    color: string;
+    description: string;
+    image: string;
+    name: string;
+    price: string;
+    quantity: undefined | number;
+    userId: number;
+    productId: number;
+}

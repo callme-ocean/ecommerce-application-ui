@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Product } from '../data-type';
+import { Cart, Product } from '../data-type';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +10,6 @@ export class ProductService {
   constructor(private http: HttpClient) { }
 
   addProduct(data: Product) {
-    console.warn("service called");
     return this.http.post('http://localhost:3000/products', data);
   }
 
@@ -53,5 +52,9 @@ export class ProductService {
       cartData.push(data);
       localStorage.setItem('localCart', JSON.stringify(cartData));
     }
+  }
+
+  addToCart(cartData: Cart) {
+    return this.http.post('http://localhost:3000/cart', cartData);
   }
 }

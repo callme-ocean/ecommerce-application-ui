@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../services/product.service';
-import { Product } from '../data-type';
+import { Cart, Product } from '../data-type';
 
 @Component({
   selector: 'app-product-details',
@@ -36,10 +36,22 @@ export class ProductDetailsComponent {
       if (!localStorage.getItem('user')) {
         console.warn("user not logged in");
         this.product.localAddToCart(this.productData);
-      } 
-      // else {
-      //   console.warn("user logged in");
-      // }
+      } else {
+        let user = localStorage.getItem('user');
+        let userId = user && JSON.parse(user).id;
+
+        let cartData: Cart = {
+          ...this.productData,
+          userId,
+          productId: this.productData.id
+        }
+        delete cartData.id;
+        this.product.addToCart(cartData).subscribe((result) => {
+          if (result) {
+            alert("Product is added in cart");
+          }
+        });
+      }
     }
   }
 }

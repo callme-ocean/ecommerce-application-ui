@@ -124,5 +124,31 @@
       "password": "abcd@1234",
       "id": 4
     }
+  ],
+  "cart": [
+    {
+      "name": "Iphone 14",
+      "price": "100000",
+      "color": "Black",
+      "category": "Mobile",
+      "description": "dfwfs",
+      "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-finish-select-202209-6-7inch-starlight?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1661027935971",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 1,
+      "id": 1
+    },
+    {
+      "name": "playstation 5",
+      "price": "55000",
+      "color": "White",
+      "category": "Gaming Console",
+      "description": "gaming",
+      "image": "https://cdn1.smartprix.com/rx-iONR62zZ0-w420-h420/sony-playstation-5-p.jpg",
+      "quantity": 3,
+      "userId": 1,
+      "productId": 5,
+      "id": 2
+    }
   ]
 }

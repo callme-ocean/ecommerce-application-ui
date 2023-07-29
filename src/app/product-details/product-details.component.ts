@@ -11,6 +11,7 @@ import { Cart, Product } from '../data-type';
 export class ProductDetailsComponent {
   productData: undefined | Product;
   productQuantity: number = 1;
+  removeCart: boolean = false;
 
   constructor(private activateRoute: ActivatedRoute, private product: ProductService) { }
 
@@ -19,6 +20,18 @@ export class ProductDetailsComponent {
     console.warn(productId);
     productId && this.product.getProduct(productId).subscribe((result) => {
       this.productData = result;
+
+      let cartData = localStorage.getItem('localCart');
+      if (productId && cartData) {
+        let items = JSON.parse(cartData);
+        items = items.filter((item: Product) => productId === item.id.toString());
+
+        if (items.length) {
+          this.removeCart = true;
+        } else {
+          this.removeCart = false;
+        }
+      }
     });
   }
 
@@ -34,8 +47,8 @@ export class ProductDetailsComponent {
     if (this.productData) {
       this.productData.quantity = this.productQuantity;
       if (!localStorage.getItem('user')) {
-        console.warn("user not logged in");
         this.product.localAddToCart(this.productData);
+        this.removeCart = true;
       } else {
         let user = localStorage.getItem('user');
         let userId = user && JSON.parse(user).id;
@@ -53,5 +66,10 @@ export class ProductDetailsComponent {
         });
       }
     }
+  }
+
+  removeFromCart(productId: number) {
+    this.product.removeItemFromCart(productId);
+    this.removeCart = false;
   }
 }

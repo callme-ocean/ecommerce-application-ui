@@ -60,4 +60,15 @@ export class ProductService {
   addToCart(cartData: Cart) {
     return this.http.post('http://localhost:3000/cart', cartData);
   }
+
+  removeItemFromCart(productId: number) {
+    let cartData = localStorage.getItem('localCart');
+    if (cartData) {
+      let items: Product[] = JSON.parse(cartData);
+      items = items.filter((item: Product) => productId !== item.id);
+      localStorage.setItem('localCart', JSON.stringify(items));
+      this.cartData.emit(items);
+    }
+  }
+
 }

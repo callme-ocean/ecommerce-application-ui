@@ -17,7 +17,6 @@ export class ProductDetailsComponent {
 
   ngOnInit() {
     let productId = this.activateRoute.snapshot.paramMap.get('productId');
-    console.warn(productId);
     productId && this.product.getProduct(productId).subscribe((result) => {
       this.productData = result;
 

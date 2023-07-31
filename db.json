@@ -163,16 +163,52 @@
       "id": 3
     },
     {
+      "name": "Pixel 7 Pro",
+      "price": "75000",
+      "color": "Black",
+      "category": "Mobile",
+      "description": "smartphone",
+      "image": "https://i.gadgets360cdn.com/products/large/Pixel-7-Pro-643x800-1665067249.jpg?downsize=*:360",
+      "quantity": 1,
+      "productId": 3,
+      "userId": 1,
+      "id": 4
+    },
+    {
       "name": "nike shoes",
       "price": "12000",
       "color": "orange",
       "category": "Shoes",
       "description": "sport shoes",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9iKcyfFORv3SnoB5MNA-J53EuMiGyW__xuA&usqp=CAU",
-      "quantity": 2,
+      "quantity": 1,
+      "productId": 4,
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "name": "nike shoes",
+      "price": "12000",
+      "color": "orange",
+      "category": "Shoes",
+      "description": "sport shoes",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9iKcyfFORv3SnoB5MNA-J53EuMiGyW__xuA&usqp=CAU",
+      "quantity": 1,
       "userId": 1,
       "productId": 4,
-      "id": 4
+      "id": 6
+    },
+    {
+      "name": "Pixel 7 Pro",
+      "price": "75000",
+      "color": "Black",
+      "category": "Mobile",
+      "description": "smartphone",
+      "image": "https://i.gadgets360cdn.com/products/large/Pixel-7-Pro-643x800-1665067249.jpg?downsize=*:360",
+      "quantity": 1,
+      "productId": 3,
+      "userId": 2,
+      "id": 7
     }
   ]
 }

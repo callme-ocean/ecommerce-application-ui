@@ -57,6 +57,7 @@ export class HeaderComponent {
   userLogOut() {
     localStorage.removeItem('user');
     this.router.navigate(['/user-auth']);
+    this.product.cartData.emit([]);
   }
 
   searchProduct(query: KeyboardEvent) {

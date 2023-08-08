@@ -127,18 +127,6 @@
   ],
   "cart": [
     {
-      "name": "Iphone 14",
-      "price": "100000",
-      "color": "Black",
-      "category": "Mobile",
-      "description": "dfwfs",
-      "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-finish-select-202209-6-7inch-starlight?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1661027935971",
-      "quantity": 1,
-      "userId": 1,
-      "productId": 1,
-      "id": 1
-    },
-    {
       "name": "playstation 5",
       "price": "55000",
       "color": "White",
@@ -175,30 +163,6 @@
       "id": 4
     },
     {
-      "name": "nike shoes",
-      "price": "12000",
-      "color": "orange",
-      "category": "Shoes",
-      "description": "sport shoes",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9iKcyfFORv3SnoB5MNA-J53EuMiGyW__xuA&usqp=CAU",
-      "quantity": 1,
-      "productId": 4,
-      "userId": 1,
-      "id": 5
-    },
-    {
-      "name": "nike shoes",
-      "price": "12000",
-      "color": "orange",
-      "category": "Shoes",
-      "description": "sport shoes",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9iKcyfFORv3SnoB5MNA-J53EuMiGyW__xuA&usqp=CAU",
-      "quantity": 1,
-      "userId": 1,
-      "productId": 4,
-      "id": 6
-    },
-    {
       "name": "Pixel 7 Pro",
       "price": "75000",
       "color": "Black",
@@ -209,18 +173,6 @@
       "productId": 3,
       "userId": 2,
       "id": 7
-    },
-    {
-      "name": "Iphone 11",
-      "price": "25000",
-      "color": "Black",
-      "category": "Mobile",
-      "description": "dsgsgsdf",
-      "image": "https://cdn1.smartprix.com/rx-iONR62zZ0-w420-h420/sony-playstation-5-p.jpg",
-      "quantity": 1,
-      "userId": 1,
-      "productId": 6,
-      "id": 8
     }
   ]
 }

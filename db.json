@@ -162,5 +162,15 @@
       "productId": 1,
       "id": 9
     }
+  ],
+  "orders": [
+    {
+      "email": "sagarsingh0802@gmail.com",
+      "address": "Sainik Colony, Pinto Park",
+      "contact": "9074315006",
+      "totalPrice": 230160,
+      "userId": 1,
+      "id": 1
+    }
   ]
 }

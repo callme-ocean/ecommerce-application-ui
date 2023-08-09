@@ -73,7 +73,7 @@ export class ProductService {
 
   getCartList(userId: number) {
     return this.http.get<Product[]>('http://localhost:3000/cart?userId=' + userId, { observe: 'response' }).subscribe((result) => {
-      console.warn(result);
+      // console.warn(result);
 
       if (result && result.body) {
         this.cartData.emit(result.body);
@@ -83,6 +83,12 @@ export class ProductService {
 
   removeToCart(cartId: number) {
     return this.http.delete('http://localhost:3000/cart/' + cartId);
+  }
+
+  currentCart() {
+    let userStore = localStorage.getItem('user');
+    let userData = userStore && JSON.parse(userStore);
+    return this.http.get<Cart[]>('http://localhost:3000/cart?userId=' + userData.id);
   }
 
 }

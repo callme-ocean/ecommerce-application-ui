@@ -73,7 +73,6 @@ export class ProductService {
 
   getCartList(userId: number) {
     return this.http.get<Product[]>('http://localhost:3000/cart?userId=' + userId, { observe: 'response' }).subscribe((result) => {
-      // console.warn(result);
 
       if (result && result.body) {
         this.cartData.emit(result.body);
@@ -81,7 +80,7 @@ export class ProductService {
     });
   }
 
-  removeToCart(cartId: number) {
+  removeFromCart(cartId: number) {
     return this.http.delete('http://localhost:3000/cart/' + cartId);
   }
 

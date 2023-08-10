@@ -27,7 +27,7 @@
       />
     </div>
     <div class="col-sm-2">
-      <span>{{ order.id }}</span>
+      <span>#{{ order.id }}</span>
     </div>
     <div class="col-sm-2">
       <span>{{ order.totalPrice }}</span>
@@ -36,7 +36,9 @@
       <span>In Process</span>
     </div>
     <div class="col-sm-2">
-      <span><button class="form-button">Cancel Order</button></span>
+      <button class="form-button" (click)="cancelOrder(order.id)">
+        Cancel Order
+      </button>
     </div>
   </div>
 </div>

@@ -137,30 +137,6 @@
       "productId": 3,
       "userId": 2,
       "id": 7
-    },
-    {
-      "name": "nike shoes",
-      "price": "12000",
-      "color": "orange",
-      "category": "Shoes",
-      "description": "sport shoes",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9iKcyfFORv3SnoB5MNA-J53EuMiGyW__xuA&usqp=CAU",
-      "quantity": 3,
-      "userId": 1,
-      "productId": 4,
-      "id": 8
-    },
-    {
-      "name": "Iphone 14",
-      "price": "100000",
-      "color": "Black",
-      "category": "Mobile",
-      "description": "dfwfs",
-      "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-finish-select-202209-6-7inch-starlight?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1661027935971",
-      "quantity": 2,
-      "userId": 1,
-      "productId": 1,
-      "id": 9
     }
   ],
   "orders": [
@@ -179,6 +155,22 @@
       "totalPrice": 230160,
       "userId": 1,
       "id": 2
+    },
+    {
+      "email": "sagarsingh0802@gmail.com",
+      "address": "Sainik Colony, Pinto Park",
+      "contact": "9074315006",
+      "totalPrice": 230160,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "email": "sagarsingh0802@gmail.com",
+      "address": "Sainik Colony, Pinto Park",
+      "contact": "9074315006",
+      "totalPrice": 23460,
+      "userId": 1,
+      "id": 4
     }
   ]
 }

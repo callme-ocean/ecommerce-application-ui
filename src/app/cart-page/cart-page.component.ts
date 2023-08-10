@@ -18,11 +18,13 @@ export class CartPageComponent {
     total: 0
   }
 
-  constructor(private product: ProductService, private router: Router) {
-
-  }
+  constructor(private product: ProductService, private router: Router) { }
 
   ngOnInit() {
+    this.loadDetails();
+  }
+
+  loadDetails() {
     this.product.currentCart().subscribe((result) => {
       this.cartData = result;
       let price = 0;
@@ -38,10 +40,25 @@ export class CartPageComponent {
       this.priceSummary.tax = price / 40;
       this.priceSummary.delivery = 60;
       this.priceSummary.total = this.priceSummary.price - this.priceSummary.discount + this.priceSummary.tax + this.priceSummary.delivery;
+
+      if (!this.cartData.length) {
+        this.router.navigate(['/']);
+      }
+
     });
   }
 
   checkout() {
     this.router.navigate(['/checkout']);
+  }
+
+  removeFromCart(cartId: number | undefined) {
+    cartId && this.product.removeFromCart(cartId).subscribe((result) => {
+      this.loadDetails();
+    });
+
+    let user = localStorage.getItem('user');
+    let userId = user && JSON.parse(user).id;
+    this.product.getCartList(userId);
   }
 }

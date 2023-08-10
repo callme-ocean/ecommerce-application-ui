@@ -92,8 +92,8 @@ export class ProductDetailsComponent {
     } else {
       let user = localStorage.getItem('user');
       let userId = user && JSON.parse(user).id;
-      console.warn(this.cartData);
-      this.cartData && this.product.removeToCart(this.cartData.id).subscribe((result) => {
+
+      this.cartData && this.product.removeFromCart(this.cartData.id).subscribe((result) => {
         if (result) {
           this.product.getCartList(userId);
         }

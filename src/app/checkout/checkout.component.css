@@ -1,11 +1,18 @@
-.checkout h1 {
+.checkout h2 {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
+  /* font-family: Roboto; */
 }
 
 .shipping-address h3 {
   text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
+  /* font-family: Roboto; */
+}
+
+.order-amount-section {
+  margin-top: 80px;
+  /* font-family: Roboto; */
 }

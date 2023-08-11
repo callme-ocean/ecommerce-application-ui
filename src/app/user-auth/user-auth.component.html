@@ -28,7 +28,7 @@
         ngModel
       />
       <button class="form-button">Sign Up</button>
-      <p>Existing User? <a class="auth-toggle-link" (click)="openLogin()">Log in</a></p>
+      <p class="toggle-line">Existing User? <a class="auth-toggle-link" (click)="openLogin()">Log in</a></p>
     </form>
   </div>
   <div *ngIf="showLogin" class="user-login">
@@ -71,7 +71,7 @@
         >
       </p>
       <button [disabled]="userLogin.invalid" class="form-button">Login</button>
-      <p>New to OceanCart? <a class="auth-toggle-link" (click)="openSignUp()">Create an account</a></p>
+      <p class="toggle-line">New to OceanCart? <a class="auth-toggle-link" (click)="openSignUp()">Create an account</a></p>
     </form>
   </div>
 </div>

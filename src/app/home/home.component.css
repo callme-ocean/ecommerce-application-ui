@@ -4,6 +4,10 @@
   width: 100%;
 }
 
+.product-list-wrapper h3 {
+  color: #fd6744;
+}
+
 .product-list-wrapper {
   margin-top: 80px;
   margin-bottom: 80px;
@@ -41,4 +45,10 @@
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  color: #fd6744;
+}
+
+.product-footer a {
+  color: #fd6744;
+  text-decoration: none;
 }

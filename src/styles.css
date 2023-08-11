@@ -19,15 +19,15 @@ body {
   height: 35px;
   margin-bottom: 20px;
   padding-left: 15px;
-  border: 1px solid blueviolet;
-  color: blueviolet;
+  border: 1px solid #000000;
+  color: #000000;
 }
 
 .form-button {
   height: 35px;
-  border: 1px solid blueviolet;
+  border: 1px solid #fd6744;
   cursor: pointer;
-  color: blueviolet;
+  color: #fd6744;
 }
 
 .error-p {

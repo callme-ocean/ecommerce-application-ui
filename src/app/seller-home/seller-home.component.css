@@ -1,18 +1,17 @@
 table {
   text-align: left;
-  color: blueviolet;
+  color: #000000;
   border-collapse: collapse;
 }
 
 table td,
 table th {
-  border: 1px solid blueviolet;
+  border: 1px solid #000000;
   padding: 10px;
   min-height: 160px;
 }
 
 img {
-  height: 100px;
   width: 100px;
 }
 

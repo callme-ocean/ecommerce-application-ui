@@ -28,14 +28,17 @@
         placeholder="Enter Email"
       />
       <button class="form-button">Signup</button>
-      <a class="auth-toggle-link" (click)="openLogin()">Already Have Account? Click to Login</a>
+      <p>
+        Existing User?
+        <a class="auth-toggle-link" (click)="openLogin()">Log in</a>
+      </p>
     </form>
   </div>
 
   <!-- Login Form -->
   <div *ngIf="showLogin" class="login">
     <h1>Seller Login</h1>
-    <p class="error-p">{{authError}}</p>
+    <p class="error-p">{{ authError }}</p>
     <form
       #sellerLogin="ngForm"
       (ngSubmit)="login(sellerLogin.value)"
@@ -58,7 +61,10 @@
       />
 
       <button class="form-button">Login</button>
-      <a class="auth-toggle-link" (click)="openSignUp()">Don't Have Account? Click to Sign-Up</a>
+      <p>
+        New to OceanCart?
+        <a class="auth-toggle-link" (click)="openSignUp()">Create an account</a>
+      </p>
     </form>
   </div>
 </div>

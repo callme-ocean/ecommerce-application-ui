@@ -28,7 +28,7 @@
         ngModel
       />
       <button class="form-button">Sign Up</button>
-      <p>Already Have Account ? <a (click)="openLogin()">Click Here</a></p>
+      <p>Existing User? <a class="auth-toggle-link" (click)="openLogin()">Log in</a></p>
     </form>
   </div>
   <div *ngIf="showLogin" class="user-login">
@@ -71,7 +71,7 @@
         >
       </p>
       <button [disabled]="userLogin.invalid" class="form-button">Login</button>
-      <p>Don't Have Account ? <a (click)="openSignUp()">Click Here</a></p>
+      <p>New to OceanCart? <a class="auth-toggle-link" (click)="openSignUp()">Create an account</a></p>
     </form>
   </div>
 </div>

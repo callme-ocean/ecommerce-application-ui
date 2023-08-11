@@ -1,5 +1,5 @@
 <div class="checkout">
-  <h1>Checkout</h1>
+  <h2>Checkout</h2>
   <p class="message-p">{{ orderMsg }}</p>
   <div class="row">
     <div class="col-sm-7 shipping-address">
@@ -33,9 +33,9 @@
         <button class="form-button">Order Now</button>
       </form>
     </div>
-    <div class="col-sm-5">
-      <h3>Total Amount: {{ totalPrice }}</h3>
-      <h4>Payment Mehthod: <b>Cash On Delivery</b></h4>
+    <div class="col-sm-5 order-amount-section">
+      <h3>Total Amount: ₹{{ totalPrice }}</h3>
+      <h4>Payment Method: <b>Cash On Delivery</b></h4>
     </div>
   </div>
 </div>

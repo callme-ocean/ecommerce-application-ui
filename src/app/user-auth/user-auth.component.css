@@ -26,6 +26,10 @@
   cursor: pointer;
 }
 
+.toggle-line {
+  margin-top: 10px;
+}
+
 .auth-toggle-link {
   margin-top: 20px;
   color: #fd6744;

@@ -66,18 +66,17 @@ export class UserAuthComponent {
               console.warn("Item stored in DB");
             }
           });
+        }, 1000);
 
-          if (cartDataList.length === index + 1) {
-            localStorage.removeItem('localCart');
-          }
-        }, 500);
-
+        if (cartDataList.length === index + 1) {
+          localStorage.removeItem('localCart');
+        }
       });
     }
 
     setTimeout(() => {
       this.product.getCartList(userId);
-    }, 2000)
+    }, 8000)
 
 
   }

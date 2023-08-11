@@ -27,6 +27,9 @@ export class CheckoutComponent {
       });
 
       this.totalPrice = price - (price / 20) + (price / 40) + 60;
+
+      // rounding off price
+      this.totalPrice = this.product.customRound(this.totalPrice);
     });
 
   }

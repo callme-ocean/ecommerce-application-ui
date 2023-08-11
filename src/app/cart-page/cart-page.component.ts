@@ -41,6 +41,9 @@ export class CartPageComponent {
       this.priceSummary.delivery = 60;
       this.priceSummary.total = this.priceSummary.price - this.priceSummary.discount + this.priceSummary.tax + this.priceSummary.delivery;
 
+      // rounding off price
+      this.priceSummary.total = this.product.customRound(this.priceSummary.total);
+
       if (!this.cartData.length) {
         this.router.navigate(['/']);
       }

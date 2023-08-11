@@ -112,4 +112,15 @@ export class ProductService {
     return this.http.delete('http://localhost:3000/orders/' + orderId);
   }
 
+  customRound(number: number): number {
+    const integerPart = Math.floor(number);
+    const decimalPart = number - integerPart;
+  
+    if (decimalPart < 0.5) {
+      return integerPart;
+    } else {
+      return integerPart + 1;
+    }
+  }
+
 }

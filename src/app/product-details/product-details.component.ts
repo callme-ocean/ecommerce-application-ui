@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from '../services/product.service';
 import { Cart, Product } from '../data-type';
 
@@ -14,7 +14,7 @@ export class ProductDetailsComponent {
   removeCart: boolean = false;
   cartData: Product | undefined;
 
-  constructor(private activateRoute: ActivatedRoute, private product: ProductService) { }
+  constructor(private activateRoute: ActivatedRoute, private product: ProductService, private router: Router) { }
 
   ngOnInit() {
     let productId = this.activateRoute.snapshot.paramMap.get('productId');
@@ -83,6 +83,16 @@ export class ProductDetailsComponent {
           }
         });
       }
+    }
+  }
+
+  buyNow() {
+    this.addToCart();
+
+    if (localStorage.getItem('user')) {
+      this.router.navigate(['/cart-page']);
+    } else {
+      this.router.navigate(['/user-auth']);
     }
   }
 

@@ -1,5 +1,5 @@
 //prod base url
 export const environment = {
   production: true,
-  apiBaseUrl: 'http://localhost:3000'
+  apiBaseUrl: 'https://ecommerce-service-ng77.onrender.com'
 };

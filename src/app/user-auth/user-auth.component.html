@@ -1,6 +1,6 @@
 <div class="user-auth">
   <div *ngIf="!showLogin" class="user-signup">
-    <h1>User Sign-Up</h1>
+    <h1>User Signup</h1>
     <form
       class="common-form"
       #userSignUp="ngForm"
@@ -27,7 +27,7 @@
         name="password"
         ngModel
       />
-      <button class="form-button">Sign Up</button>
+      <button class="form-button">Signup</button>
       <p class="toggle-line">Existing User? <a class="auth-toggle-link" (click)="openLogin()">Log in</a></p>
     </form>
   </div>

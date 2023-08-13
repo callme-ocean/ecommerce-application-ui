@@ -1,5 +1,5 @@
 <h1>Live Project</h1>
-<a>https://oceancart.netlify.app/</a>
+<a href="https://oceancart.netlify.app/">https://oceancart.netlify.app/</a>
 
 <h1>Screenshots</h1>
 

@@ -1,27 +1,43 @@
-# EcommerceApplicationUi
+<h2>Screenshots :</h2>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+<h3>Landing Page :</h3>
+<img src="https://raw.githubusercontent.com/callme-ocean/callme-ocean/main/projectScreenshots/oceanCart/oceancart_img1.png" alt="oceancart_img1"/>
 
-## Development server
+<img src="https://raw.githubusercontent.com/callme-ocean/callme-ocean/main/projectScreenshots/oceanCart/oceancart_img2.png" alt="oceancart_img2"/>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<h3>Auto Suggestion Product Search :</h3>
+<img src="https://raw.githubusercontent.com/callme-ocean/callme-ocean/main/projectScreenshots/oceanCart/oceancart_img14.png" alt="oceancart_img14"/>
 
-## Code scaffolding
+<h3>Product Details :</h3>
+<img src="https://raw.githubusercontent.com/callme-ocean/callme-ocean/main/projectScreenshots/oceanCart/oceancart_img3.png" alt="oceancart_img3"/>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h3>User Login :</h3>
+<img src="https://raw.githubusercontent.com/callme-ocean/callme-ocean/main/projectScreenshots/oceanCart/oceancart_img4.png" alt="oceancart_img4"/>
 
-## Build
+<h3>User Signup :</h3>
+<img src="https://raw.githubusercontent.com/callme-ocean/callme-ocean/main/projectScreenshots/oceanCart/oceancart_img5.png" alt="oceancart_img5"/>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<h3>Cart :</h3>
+<img src="https://raw.githubusercontent.com/callme-ocean/callme-ocean/main/projectScreenshots/oceanCart/oceancart_img8.png" alt="oceancart_img8"/>
 
-## Running unit tests
+<h3>Checkout Page :</h3>
+<img src="https://raw.githubusercontent.com/callme-ocean/callme-ocean/main/projectScreenshots/oceanCart/oceancart_img9.png" alt="oceancart_img9"/>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<h3>My Orders :</h3>
+<img src="https://raw.githubusercontent.com/callme-ocean/callme-ocean/main/projectScreenshots/oceanCart/oceancart_img10.png" alt="oceancart_img10"/>
 
-## Running end-to-end tests
+<h3>Seller Signup :</h3>
+<img src="https://raw.githubusercontent.com/callme-ocean/callme-ocean/main/projectScreenshots/oceanCart/oceancart_img6.png" alt="oceancart_img6"/>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<h3>Seller Login :</h3>
+<img src="https://raw.githubusercontent.com/callme-ocean/callme-ocean/main/projectScreenshots/oceanCart/oceancart_img7.png" alt="oceancart_img7"/>
 
-## Further help
+<h3>Seller Dashboard :</h3>
+<img src="https://raw.githubusercontent.com/callme-ocean/callme-ocean/main/projectScreenshots/oceanCart/oceancart_img11.png" alt="oceancart_img11"/>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<h3>Product Update :</h3>
+<img src="https://raw.githubusercontent.com/callme-ocean/callme-ocean/main/projectScreenshots/oceanCart/oceancart_img12.png" alt="oceancart_img12"/>
+
+<h3>Add Product :</h3>
+<img src="https://raw.githubusercontent.com/callme-ocean/callme-ocean/main/projectScreenshots/oceanCart/oceancart_img13.png" alt="oceancart_img13"/>
+
